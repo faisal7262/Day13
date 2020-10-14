@@ -42,3 +42,12 @@ else
 	echo false;
 fi
 
+#uc5 uc6 uc7 and uc8
+read password
+pattern5="^([A-Z]{1})([0-9]{1})([#?!@$%^&*-]{1})([a-z]{5})$"
+#pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$"
+if [[ $password =~ $pattern ]] then 
+echo true 
+else 
+echo false 
+fi
