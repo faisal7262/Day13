@@ -9,3 +9,12 @@ else
 	echo false;
 fi
 
+read lastname
+pattern1="^(([A-Z]+){1}([a-z]){2})$"
+if [[ $lastname =~ $pattern ]]
+then
+	echo true
+else
+	echo false
+fi
+
