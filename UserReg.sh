@@ -28,3 +28,17 @@ pattern3="^[0-9a-zA-Z]+([._+-][0-9a-zA-Z]+)*@[0-9a-zA-Z]+.[a-zA-Z]{2,4}([.][a-zA
 else 
 echo false
  fi
+
+#uc4
+
+read phone
+
+pattern4="^[0-9]{2}[ ][0-9]{10}$"
+
+if [[ $phone =~ $pattern ]]
+then
+	echo true;
+else
+	echo false;
+fi
+
